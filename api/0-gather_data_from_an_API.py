@@ -24,7 +24,7 @@ def get_employee_todo_progress(employee_id):
 
             print(f"Employee {employee_name} is done with tasks({done_tasks}/{total_tasks}):")
             for title in completed_task_titles:
-                print(f"	 {title}")
+                print(f"     {title}")
 
         else:
             print("Failed to retrieve data from the API.")
