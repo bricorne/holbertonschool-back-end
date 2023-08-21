@@ -3,6 +3,7 @@
 import sys
 import requests
 
+
 def get_employee_todo_progress(employee_id):
     base_url = "https://jsonplaceholder.typicode.com"
     employee_url = f"{base_url}/users/{employee_id}"
@@ -23,7 +24,7 @@ def get_employee_todo_progress(employee_id):
 
             print(f"Employee {employee_name} is done with tasks({done_tasks}/{total_tasks}):")
             for title in completed_task_titles:
-                print(f"    {title}")
+                print(f"	 {title}")
 
         else:
             print("Failed to retrieve data from the API.")
