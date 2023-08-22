@@ -29,3 +29,7 @@ def get_employee_todo_progress(emp_id):
 
     with open("{}.json".format(emp_id), 'w') as jsonfile:
         json.dump(tasks_json, jsonfile)
+
+if __name__ == "__main__":
+    emp_id = int(sys.argv[1])
+    get_employee_todo_progress(emp_id)
