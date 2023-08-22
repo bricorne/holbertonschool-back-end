@@ -24,5 +24,5 @@ def get_employee_todo_progress(emp_id):
 
 
 if __name__ == "__main__":
-    emp_id = int(sys.argv[1])
+    emp_id = sys.argv[1]
     get_employee_todo_progress(emp_id)
