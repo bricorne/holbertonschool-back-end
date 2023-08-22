@@ -6,7 +6,7 @@ import sys
 
 
 def get_employee_todo_progress(emp_id):
-    base_url = (f'https://jsonplaceholder.typicode.com/users/{emp_id}')	 
+    base_url = (f'https://jsonplaceholder.typicode.com/users/{emp_id}')
     emp_data = requests.get(base_url).json()
     todos_url = (
         f'https://jsonplaceholder.typicode.com/todos?userId={emp_id}')
