@@ -22,6 +22,7 @@ def get_employee_todo_progress(emp_id):
     for task in done_tasks:
         print("\t", task["title"])
 
+
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: python3 script_name.py employee_id")
