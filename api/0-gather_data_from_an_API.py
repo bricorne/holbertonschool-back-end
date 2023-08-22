@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 '''Python script that returns information using REST API'''
 
-import sys
 import requests
+import sys
 
 
 def filter(data: list, key, val) -> list:
